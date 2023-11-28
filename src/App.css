@@ -1,0 +1,168 @@
+:root {
+  --first-color: #01853d;
+  --second-color: #8cc826;
+  --third-color: #ffc92d;
+  --fourth-color: #ff8b22;
+  --fifth-color: #fd3d19;
+  --sixt-color: #fffacd;
+
+  --shadow: -1px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  margin-top: 0;
+  background-image: url("/public/bg-variety-of-vegetables-616401.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #353535;
+}
+.logo {
+  width: 170px;
+  height: auto;
+}
+
+.App {
+  text-align: center;
+}
+
+.header-section {
+  width: 100%;
+  background-color: rgb(000, 000, 000, 0.4);
+  margin: 0;
+  padding: 1em 0;
+}
+
+.results {
+  /* background-color: rgb(255, 255, 255, 0.3); */
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.loading {
+  font-size: 25px;
+  color: var(--first-color);
+}
+
+.error {
+  font-size: 25px;
+  color: var(--fifth-color);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+input {
+  width: 100%;
+  min-width: 375px;
+  height: 100%;
+  min-height: 37px;
+  padding: 10px 10px;
+  border-radius: 3em;
+  border: 6px solid var(--second-color);
+  font-size: 25px;
+}
+
+input:focus {
+  outline: 6px solid var(--first-color);
+}
+
+.searchWraper {
+  display: inline-block;
+  padding: 1em 0 1em 0;
+}
+
+button {
+  background-color: var(--second-color);
+  height: 6em;
+  padding: 10px 20px;
+  border-radius: 3em;
+  margin-left: -7em;
+}
+
+button:hover {
+  background-color: limegreen;
+  cursor: pointer;
+}
+
+.food-item p {
+  padding: 5px;
+  margin: 0;
+}
+
+.food-item h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.food-item {
+  background-color: var(--third-color);
+  padding: 1em;
+  margin: 1em;
+  border-radius: 3em;
+  display: inline-block;
+  justify-content: baseline;
+  box-shadow: var(--shadow);
+}
+
+.food-item-header {
+  background-color: var(--first-color);
+  padding: 0.1em;
+  margin: -0.1em;
+  margin-bottom: 1em;
+  border-radius: 2.5em 2.5em 0 0;
+  color: white;
+}
+
+.food-item ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*Sum badge*/
+
+.sumWraper {
+  display: inline-block;
+  margin: 10px;
+}
+
+.totalSum {
+  width: 10em;
+  height: 6em;
+  border-radius: 4em;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: white;
+  font-weight: bold;
+  box-shadow: var(--shadow);
+}
+
+.sum {
+  background-color: white;
+  width: 5em;
+  height: 4em;
+  border-radius: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  color: black;
+}
+
+.sum p {
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  color: white;
+}
