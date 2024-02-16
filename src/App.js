@@ -7,6 +7,7 @@ import ErrorMsg from "./ErrorMsg";
 import FoodList from "./FoodList";
 import TotalSum from "./TotalSum";
 import Footer from "./Footer";
+import Intro from "./Intro";
 
 const App = () => {
   const [searchRes, setSearchRes] = useState([]);
@@ -74,26 +75,29 @@ const App = () => {
         <ErrorMsg message="Food not found." />
       )} */}
       {/* {!loading && !error && ( */}
-      <div className="results">
-        <TotalSum
-          total={totalCalories}
-          nutritionName="Calories"
-          bgColor="#ff8b22"
-        >
-          kCal
-        </TotalSum>
-        <TotalSum
-          total={totalProtein}
-          nutritionName="Proteins"
-          bgColor="#8cc826"
-        >
-          g
-        </TotalSum>
-        <TotalSum total={totalSugar} nutritionName="Sugar" bgColor="#fd3d19">
-          g
-        </TotalSum>
-        <FoodList searchRes={searchRes} />
-      </div>
+      {!query ? (
+        <Intro />
+      ) : (
+        <div className="results">
+          <TotalSum
+            total={totalCalories}
+            nutritionName="Calories"
+            bgColor="#ff8b22"
+          >
+            kCal
+          </TotalSum>
+          <TotalSum
+            total={totalProtein}
+            nutritionName="Proteins"
+            bgColor="#8cc826"
+          >
+            g
+          </TotalSum>
+          <TotalSum total={totalSugar} nutritionName="Sugar" bgColor="#fd3d19">
+            g
+          </TotalSum>
+          <FoodList searchRes={searchRes} />
+        </div>
       )}
       {/* {error && <ErrorMsg message={error} />} */}
       <Footer />;
