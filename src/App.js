@@ -15,7 +15,7 @@ const App = () => {
   const [query, setQuery] = useState("");
   const [error, setError] = useState("");
 
-  const apiKey = "";
+  const apiKey = "AjfqGiXZDeUiA1CT0g9aOQ==PcEL695LgpTJD2rn";
 
   //Total sum
   const getTotalCalories = (searchRes) => {
